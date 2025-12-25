@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff; 
+}
+
+.navbar {
+  background-color: #ffd971; 
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+}
+
+.navbar a {
+  color: #3c5169;
+  text-decoration: none;
+  font-size: 20px;
+  flex-shrink: 1;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+.top-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.content {
+  padding: 40px;
+  padding-top: 20px;  
+  background: linear-gradient(#546d8e, #b0b7c1);
+  min-height: 100vh;
+  box-sizing:border-box
+}
+.content a {
+  text-decoration: none;
+  color: #ffd971;
+}
+a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+    padding: 10px 0;
+    position: relative;
+    min-height: 70px;
+    padding: 0 1.5rem;
+  }
+
+  .navbar a {
+    font-size: 18px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+.category {
+  margin-bottom: 40px;
+}
+
+.category h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 24px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ffd971;
+  padding-bottom: 5px;
+}
+
+
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b0b7c1;
+    color: white;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    gap: 1rem;
+    padding: 1rem 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav-links a {
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  .nav-links.show {
+    display: flex; 
+  }
+}
+
