@@ -19,6 +19,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   background-color: #feebb6;
+  margin: 0;
 }
 
 div {

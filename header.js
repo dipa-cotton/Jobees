@@ -18,6 +18,7 @@ class SiteHeader extends HTMLElement {
       <li><a href="first.html">FIRST</a></li>
       <li><a href="events.html">Events</a></li>
       <li><a href="about.html">About</a></li>
+      <li><a href="resource.html">Resource Hub</a></li>
       <li><a href="reference.html">Reference Page</a></li>
     </ul>
 
