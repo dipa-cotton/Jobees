@@ -1,5 +1,7 @@
 header {
-  margin: 0px;
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
   font-family: 'Montserrat', sans-serif;
   color:#000000;
   background-color: #feebb6; 
@@ -18,6 +20,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   background-color: #feebb6;
   margin: 0;
   scroll-behavior: smooth;
@@ -33,13 +36,15 @@ div {
 footer {
   display: flex;
   width: 100vw;
- justify-content: space-between;
+  margin-top: 20px;
+  justify-content: space-between;
 }
 
 .navbar {
   background-color: #ffd971; 
   display: flex;
   justify-content: center;
+  width: 100%;
   gap: 30px;
   position: relative; 
 }
@@ -136,7 +141,7 @@ a:hover {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) { /* 768 */
   .menu-toggle {
     display: block;
   }
@@ -170,11 +175,21 @@ a:hover {
 .projects-grid {
   display: flex;
   flex-direction: column;
-  gap: 28px;
-  margin-top: 30px;
+  /* gap: 28px; */
+  margin: 40px 30px;
+  width: 90%;
   max-width: 1100px; 
-  margin-left: auto;
-  margin-right: auto;
+  /* min-height: 300px; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.projects-grid.active {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .project-card {
@@ -186,10 +201,14 @@ a:hover {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 1100px;
+  width: 100%;
   height: 100%;
   margin: 10px;
   padding: 20px;
 }
+
 
 .project-card p {
   display: -webkit-box;
@@ -209,16 +228,26 @@ a:hover {
 }
 
 .project-card img {
-object-fit: cover;
+  object-fit: cover;
   border-radius: 12px;
-    flex-shrink: 0;
+  flex-shrink: 0;
+  width: 100%;
+  height: 220px;
 }
 
 .project-card h3 {
-  margin: 8px 0 6px;
-  color: #e1a80a;
+  /* margin: 8px 0 6px;
+  color: #e1a80a; */
+  margin: 10px;
   font-size: 1.4rem;
 }
+
+/* .project-card h3 {
+  /* margin: 8px 0 6px;
+  color: #e1a80a; */
+  /* margin-top: 10px; */
+  /* font-size: 100px;
+} */
 
 .project-card a:hover {
   text-decoration: underline;
@@ -238,22 +267,12 @@ object-fit: cover;
 .project-info a:hover {
   text-decoration: underline;
 }
-@media (max-width: 600px) {
-project-card {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .project-card img {
-    width: 100%;
-    height: 180px;
-  }
-}
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   max-width: 1100px;
   padding: 60px 40px;
 }
@@ -261,12 +280,12 @@ project-card {
 
 
 .section-label {
-  margin-top: 80px;
-  font-size: 14px;
+  /* margin-top: 50px; */
+  font-size: 32px;
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #000000;
+  color: #e1a80a;
 }
 
 h1 {
@@ -289,7 +308,7 @@ h2 {
   max-width: fit-content;
   font-size: 18px;
   line-height: 1.6;
-  color: #e1a80a;
+  color: #000000;
 }
 
 .section-label.bottom {
@@ -301,16 +320,22 @@ h2 {
   justify-content: center;
   align-items: center;
   min-height: 50vh;
-  background: #ffe089
+  background: #ffd971;
+  border-radius: 14px;
+  border: 4px solid #fad05d;
+  /* box-shadow: 0 8px 20px rgba(0,0,0,0.15); */
+  /* background: #ffe089 */
 }
 .footer-sections {
   display: flex;
-  justify-self: flex-end;
+  align-items: flex-start;
+  /* justify-self: flex-end; */
   width: 100vw;
   justify-content: space-around;
   flex-direction: row;
-  background-color: #ffd971; 
-  padding: 40px 0;
+  background-color: #ffd971;
+  gap: 25px;
+  padding: 40px 0px;
   position: relative;
 }
 a {
@@ -343,3 +368,24 @@ a:hover {
   display: block;
   margin: 0 auto 24px;
 }
+
+@media (max-width: 1100px) {
+/* project-card {
+    flex-direction: column;
+    align-items: flex-start;
+  } */
+
+  .project-card img {
+    /* width: 100%;
+    height: 180px; */
+    /* object-fit: contain; */
+  }
+}
+
+@media (max-width: 800px) {
+  .footer-sections {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
