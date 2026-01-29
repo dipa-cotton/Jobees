@@ -6,7 +6,7 @@ class SiteFooter extends HTMLElement {
     <div class="footer-section">
       <h4>Quick Links</h4>
       <ul>
-        <li><a href="home.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="first.html">FIRST Robotics</a></li>
         <li><a href="events.html">Events</a></li>
         <li><a href="about.html">About</a></li>
@@ -21,7 +21,7 @@ class SiteFooter extends HTMLElement {
       <p>Phone: (123) 456-7890</p>
       <p>© 2026 Jobees Robotics Team</p>
     </div>
-    <a href="home.html">
+    <a href="index.html">
         <img src="images/smal.png" alt="Jobees Robotics Logo" class="logo">
       </a>
   </div>
