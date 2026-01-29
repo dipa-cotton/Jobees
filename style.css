@@ -264,7 +264,7 @@ a:hover {
   flex: 1;
 }
 
-.project-info a {
+.internal-link {
   margin-top: auto;
   font-weight: 700;
   color: #fff;
@@ -361,7 +361,7 @@ h2 {
 }
 
 .body {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   max-width: fit-content;
   font-size: 1.125rem;
