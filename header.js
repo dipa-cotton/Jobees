@@ -12,7 +12,7 @@ class SiteHeader extends HTMLElement {
         <img src="images/tiny.png" alt="Jobees Robotics Logo" class="logo">
       </a>
     </div>
-    <h2 class="site-title" style="width: 30%;">Jobees Robotics</h2>
+    <h2 class="site-title" font size= style="margin: 10px;">Jobees Robotics</h2>
 
     <ul class="nav-links" id="nav-links">
       <li><a href="index.html">Home</a></li>
