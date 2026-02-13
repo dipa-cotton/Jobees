@@ -11,14 +11,13 @@ class SiteFooter extends HTMLElement {
         <li><a href="events.html">Events</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="resource.html">Resources</a></li>
-        <li><a href="reference.html">Reference Page</a></li>
 
       </ul>
     </div>
     <div class="footer-section">
       <h4>Contact Us</h4>
       <p>Email: jobeesrobotics@gmail.com</p>
-      <p>Phone: (123) 456-7890</p>
+      <p>Phone: (813) 535-0518</p>
       <p>© 2026 Jobees Robotics Team</p>
     </div>
     <a href="index.html">
